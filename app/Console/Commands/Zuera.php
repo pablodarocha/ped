@@ -57,13 +57,13 @@ class Zuera extends Command
     public function fire() {
         $name = $this->input->getArgument("name");
 
-        $this->info("Hello {$name}!");
+        $this->info("Vai se fudeeeeeeeeer {$name}!");
     }
 
     protected function getArguments()
     {
         return [
-            ['name', InputArgument::OPTIONAL, 'O nome que deverá ser exibido.', 'World'],
+            ['name', InputArgument::OPTIONAL, 'O nome que deverá ser exibido.', 'Doge'],
         ];
     }
 }
