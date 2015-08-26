@@ -14,18 +14,22 @@ class UserController extends Controller
      *
      * @return Response
      */
-    public function sendEmailReminder(Request $request, $id)
-    {
-        $user = User::findOrFail($id);
-
-        Mail::send('emails.reminder', ['user' => $user], function ($m) use ($user) {
-            $m->to($user->email, $user->name)->subject('Your Reminder!');
-        });
-    }
+//    public function sendEmailReminder(Request $request, $id)
+//    {
+//        $user = User::findOrFail($id);
+//
+//        Mail::send('emails.reminder', ['user' => $user], function ($m) use ($user) {
+//            $m->to($user->email, $user->name)->subject('Your Reminder!');
+//        });
+//    }
 
     public function index()
     {
-        //
+        //Controller: upload de arquivo,
+//        validação,
+//        mover arquivo e renomear
+//        ler esse arquivo com php
+//        usar os dados lidos com o eloquent para colocar no banco
     }
 
     /**
