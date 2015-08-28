@@ -11,3 +11,8 @@
 <p>
     That is all.
 </p>
+
+{{--
+Mail::send('emails.test', ['testVar' => 'Just a silly test'], function($message) { $message->to('pablodarocha.ribeiro@gmail.com')->subject('A simple test'); });
+->from('email@email.com')
+--}}
